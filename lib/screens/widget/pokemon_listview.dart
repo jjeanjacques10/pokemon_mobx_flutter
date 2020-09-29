@@ -94,8 +94,7 @@ class _PokemonListViewState extends State<PokemonListView> {
                 ],
               ),
               onTap: () => {
-                    Navigator.pushNamed(context, '/details',
-                        arguments: pokemon.name)
+                    Navigator.pushNamed(context, '/details', arguments: pokemon)
                   }),
         ],
       ),

@@ -4,25 +4,25 @@ import 'package:nac_pokemon_mobx/models/pokemon_model.dart';
 class PokemonDetail extends StatelessWidget {
   const PokemonDetail({
     Key key,
-    @required this.pokemons,
+    @required this.pokemon,
   }) : super(key: key);
 
-  final PokemonModel pokemons;
+  final PokemonModel pokemon;
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
         _buildImagemDetalhes(
-            'assets/pokemons/' + pokemons.num.toString() + '.png'),
-        _buildTitle(pokemons.variations[0].types.toString()),
+            'assets/pokemons/' + pokemon.num.toString() + '.png'),
+        _buildTitle(pokemon.variations[0].types.toString()),
         SizedBox(
           height: 16,
         ),
         _buildLineDetailIcons(
-            pokemons.num.toString(),
-            pokemons.variations[0].height.toString(),
-            pokemons.variations[0].weight.toString()),
+            pokemon.num.toString(),
+            pokemon.variations[0].height.toString(),
+            pokemon.variations[0].weight.toString()),
         SizedBox(
           height: 16,
         ),
@@ -30,7 +30,7 @@ class PokemonDetail extends StatelessWidget {
         SizedBox(
           height: 15,
         ),
-        _buildTextDetails(pokemons.variations[0].description),
+        _buildTextDetails(pokemon.variations[0].description),
         SizedBox(
           height: 20,
         ),
@@ -38,12 +38,12 @@ class PokemonDetail extends StatelessWidget {
         SizedBox(
           height: 15,
         ),
-        buildList(pokemons.variations[0].abilities),
+        buildList(pokemon.variations[0].abilities),
         _buildSubtitle("Evolutions"),
         SizedBox(
           height: 15,
         ),
-        buildList(pokemons.variations[0].evolutions),
+        buildList(pokemon.variations[0].evolutions),
       ],
     );
   }

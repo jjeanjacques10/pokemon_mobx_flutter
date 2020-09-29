@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 
 class ServiceConfig {
   String _url = "http://192.168.0.107:8080/api";
-  int timeout = 15000;
+  int timeout = 25000;
 
   ServiceConfig(this._url, {this.timeout = 5000});
 
