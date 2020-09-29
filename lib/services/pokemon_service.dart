@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:nac_pokemon_mobx/services/Service_config.dart';
 
 class PokemonService {
-  static final String _endpoint = "http://192.168.0.107:8080/api";
+  static final String _endpoint = "https://pokemon-nac.herokuapp.com/api";
 
   static final String _resource = '/pokedex';
 
