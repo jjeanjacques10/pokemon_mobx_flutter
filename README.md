@@ -26,6 +26,8 @@
 
 Aplicativo de listagem de pokemons que consome de uma API REST. Foi utilizado o MobX para criar a lista como solicitado pelo professor.
 
+A API foi hospedada no Heroku, tiveram que ser feitas algumas moficações no original para adicionar o método de exclusão e filtragem. Você pode encontrar o código da API aqui : [API Pokemon (Em desenvolvimento)]()
+
 ## Faculdade
 
 [Faculdade de Informática e Administração Paulista - FIAP](https://www.fiap.com.br/)
