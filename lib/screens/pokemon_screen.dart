@@ -99,10 +99,15 @@ class _PokemonScreenState extends State<PokemonScreen> {
                   ),
                 ),
                 Expanded(
-                  child: PokemonListView(
-                    pokemons: pokemonScreenStore.filtered,
+                  child: RefreshIndicator(
+                    onRefresh: () async {
+                      pokemonScreenStore.init();
+                    },
+                    child: PokemonListView(
+                      pokemons: pokemonScreenStore.filtered,
+                    ),
                   ),
-                )
+                ),
               ],
             );
           }
