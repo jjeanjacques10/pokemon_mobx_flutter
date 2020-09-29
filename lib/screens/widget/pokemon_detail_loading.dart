@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
-class PokemonListViewDetailsLoading extends StatelessWidget {
-  const PokemonListViewDetailsLoading({
+class PokemonDetailLoading extends StatelessWidget {
+  const PokemonDetailLoading({
     Key key,
   }) : super(key: key);
 

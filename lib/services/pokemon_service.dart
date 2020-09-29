@@ -10,7 +10,7 @@ class PokemonService {
   final ServiceConfig service = new ServiceConfig(_endpoint);
 
   Future<List<PokemonModel>> findAll() async {
-    await Future.delayed(Duration(seconds: 52));
+    //await Future.delayed(Duration(seconds: 20));
 
     List<PokemonModel> lista = new List<PokemonModel>();
 

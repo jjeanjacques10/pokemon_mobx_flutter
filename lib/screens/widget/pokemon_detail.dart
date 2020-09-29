@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nac_pokemon_mobx/models/pokemon_model.dart';
 
-class PokemonListViewDetails extends StatelessWidget {
-  const PokemonListViewDetails({
+class PokemonDetail extends StatelessWidget {
+  const PokemonDetail({
     Key key,
     @required this.pokemons,
   }) : super(key: key);
